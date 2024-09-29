@@ -9,10 +9,37 @@
   </head>
 
   <body>
+    <header class="header"></header>
     <h1>Edit Post</h1>
 
-    <form name="editPost">
-      <button>Edit Post</button>
+    <form name="editPost" id="editPostForm">
+      <div>
+        <label for="postTitle">Title</label>
+        <input type="text" name="postTitle" id="postTitle" required/>
+      </div>
+
+      <div>
+        <label for="postText">Story</label>
+        <textarea name="postText" id="postText"></textarea>
+      </div>
+
+      <div>
+        <label for="tags">Tags (separate with comma)</label>
+        <input type="text" name="tags" id="tags"/>
+      </div>
+
+      <div>
+        <label for="imageUrl">Image Url</label>
+        <input type="url" name="image" id="imageUrl"/>
+      </div>
+
+      <div>
+        <label for="imageAlt">Image description</label>
+        <input type="text" name="alt" id="imageAlt"/>
+      </div>
+
+      <button class="btn" id="savePostButton">Save Post</button>
+
     </form>
   </body>
 </html>

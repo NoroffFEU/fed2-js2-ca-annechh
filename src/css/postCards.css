@@ -1,0 +1,34 @@
+#posts {
+    max-width: 1920px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+}
+
+.post-card {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+    position: relative;
+    background: #3d3a3a;
+}
+
+.card-image-container {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.post-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.social-posts-content {
+    cursor: pointer;
+}

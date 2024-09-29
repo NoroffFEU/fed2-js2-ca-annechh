@@ -7,9 +7,37 @@
     <script type="module" src="/src/app.js"></script>
   </head>
   <body>
+    <header class="header"></header>
     <h1>Create Post</h1>
+    
+    <a href="/">HOME</a>
 
-    <form name="createPost">
+    <form name="createPost" class="createPost">
+      <div>
+        <label for="postTitle">Title</label>
+        <input type="text" name="postTitle" id="postTitle" required/>
+      </div>
+
+      <div>
+        <label for="postText">Story</label>
+        <textarea name="postText" id="postText"></textarea>
+      </div>
+
+      <div>
+        <label for="tags">Tags (separate with comma)</label>
+        <input type="text" name="tags" id="tags"/>
+      </div>
+
+      <div>
+        <label for="imageUrl">Image Url</label>
+        <input type="url" name="image" id="imageUrl"/>
+      </div>
+
+      <div>
+        <label for="imageAlt">Image description</label>
+        <input type="text" name="alt" id="imageAlt"/>
+      </div>
+
       <button>Create Post</button>
     </form>
   </body>

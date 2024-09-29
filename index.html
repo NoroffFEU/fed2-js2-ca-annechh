@@ -10,13 +10,23 @@
 </head>
 
 <body>
-  <img src="/images/noroff-logo.png" alt="Noroff Logo" />
+
+  <header class="header"></header>
 
   <h1>Home</h1>
 
-  <a href="/profile/">My Profile</a>
-  <a href="/auth/login/">Login</a>
-  <a href="/auth/register/">Register</a>
-  <button>Logout</button>
+  <span class="loader" id="loader"></span>
+
+  <div id="posts"></div>
+
+  <div class="pagination">
+    <button class="btn" id="paginationFirstPage">First Page</button>
+    <button class="btn" id="paginationBack">Back</button>
+    <button class="btn" id="paginationNext">Next</button>
+    <button class="btn" id="paginationLastPage">Last Page</button>
+  </div>
+  
+  <div id="pageInfo"></div>
+
 </body>
 </html>
