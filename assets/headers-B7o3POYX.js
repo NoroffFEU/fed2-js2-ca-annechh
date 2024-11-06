@@ -1,0 +1,1 @@
+import{i as n,j as a}from"./nav-BI90erGG.js";function r(){const e=new Headers({"Content-Type":"application/json"});return e.append("X-Noroff-API-Key",n),a&&e.append("Authorization",`Bearer ${a}`),e}export{r as h};

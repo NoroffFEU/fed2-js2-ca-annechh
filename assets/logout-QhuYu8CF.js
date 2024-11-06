@@ -1,0 +1,1 @@
+function t(){localStorage.removeItem("accessToken"),localStorage.removeItem("userData"),alert("Successfully logged out"),window.location.href="/auth/"}function n(){document.getElementById("logoutButton").addEventListener("click",()=>{t()}),document.getElementById("mobileLogoutButton").addEventListener("click",()=>{t()})}export{n as s};
